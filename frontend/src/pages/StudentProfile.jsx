@@ -1,11 +1,7 @@
 import React from 'react'
 import Jaklen from '../assets/images/jaklen.jpg';
 import uiux from '../assets/images/uiux.jpg';
-import { BsPatchCheck } from "react-icons/bs";
-import { PiHouseSimpleLight } from "react-icons/pi";
-import { RiNumber1 } from "react-icons/ri";
-import { RiNumber3 } from "react-icons/ri";
-import { HiOutlineArrowTrendingUp } from "react-icons/hi2";
+import { AiOutlineLike } from "react-icons/ai";
 export const StudentProfile = () => {
     return (
         <div className='w-[80%] mx-auto mt-10'>
@@ -13,14 +9,27 @@ export const StudentProfile = () => {
                 <img src={Jaklen} className='w-36 h-36 rounded-lg'/>
                 <div className='mt-4'>
                     <span className='font-bold capitalize font-playpen text-2xl'>jaklen smith</span>
-                    <div className='flex gap-5 mt-3 font-poppins'>
-                        <span><span>50k </span>Followers</span>
-                        <span><span>100 </span>Following</span>
-                        <span><span>30 </span>Likes</span>
+                    <div className='flex gap-5 mt-2 font-poppins mb-3'>
+                        <span className='text-orange-400'><span>50k </span>Followers</span>
+                        <span className='text-purple-400'><span>100 </span>Following</span>
+                        <span className='text-blue-400 flex items-center gap-1'><span><AiOutlineLike/></span><span>30 </span>Likes</span>
+                    </div>
+                    <div>
+                        <p className='font-poppins capitalize text-sm font-medium'>productive time<span className='text-gray-400'> / day</span></p>
+                        <div className='flex items-center gap-3'>
+                            <p className='font-poppins text-xl font-medium'>4 hr</p>
+                            <div className='flex items-center'>
+                                <div className="inline-flex gap-2 self-end rounded border border-solid border-1 border-lime-500 p-px text-lime-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                </div>
+                                <span className="text-xs font-medium text-lime-500"> +67%last week</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
             <section>
                 <h1 className='font-poppins font-medium text-4xl capitalize mb-3'>my list</h1>
                 <div className='flex gap-10 mb-10 font-poppins text-lg'>
@@ -126,11 +135,6 @@ export const StudentProfile = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className='mt-40'>
-                <div className="mt-7 flex gap-10 bg-white shadow-2xl rounded-xl w-[700px]">
-                    <p>productive time/day</p>
                 </div>
             </section>
         </div>
