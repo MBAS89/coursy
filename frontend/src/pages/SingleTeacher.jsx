@@ -3,6 +3,7 @@ import Jaklen from '../assets/images/jaklen.jpg';
 import uiux from '../assets/images/uiux.jpg';
 import { Link } from 'react-router-dom';
 import { BsBookmark } from "react-icons/bs";
+import { FaRegCircleCheck } from "react-icons/fa6";
 
 export const SingleTeacher = () => {
     const [selectedCategory,setSelectedCategory] = useState('freeCourses')
@@ -48,7 +49,39 @@ export const SingleTeacher = () => {
                 courseTime:'10hrs'
             },
         ],
-        teacherPlan:'sdbsajd'
+        teacherPlan:[
+            {
+                title:'Basic',
+                subtitle:'most popular',
+                feature1:'Access to 24,000+ top courses',
+                feature2:'Access to 24,000+ top courses',
+                feature3:'Access to 24,000+ top courses',
+                feature4:'Access to 24,000+ top courses',
+                feature5:'Access to 24,000+ top courses',
+                feature6:'Access to 24,000+ top courses',
+            },
+            {
+                title:'Professional',
+                subtitle:'recommended',
+                feature1:'Access to 24,000+ top courses',
+                feature2:'Access to 24,000+ top courses',
+                feature3:'Access to 24,000+ top courses',
+                feature4:'Access to 24,000+ top courses',
+                feature5:'Access to 24,000+ top courses',
+                feature6:'Access to 24,000+ top courses',
+            },
+            {
+                title:'Ultimate',
+                subtitle:'best value',
+                feature1:'Access to 24,000+ top courses',
+                feature2:'Access to 24,000+ top courses',
+                feature3:'Access to 24,000+ top courses',
+                feature4:'Access to 24,000+ top courses',
+                feature5:'Access to 24,000+ top courses',
+                feature6:'Access to 24,000+ top courses',
+            },
+
+        ]
 
     }
 
@@ -102,7 +135,7 @@ export const SingleTeacher = () => {
                 </div>
             </div>
         </section>
-        <section className="w-[60%] mx-auto mt-16">
+        <section className="w-[60%] mx-auto mt-16 mb-20">
             <div className="flex space-x-4">
                 {categories.map((category) => (
                 <button key={category} className={`${selectedCategory === category? 'bg-blue-500 text-white': 'bg-gray-200 text-gray-600'} px-4 py-2 rounded-md`} onClick={() => handleCategoryClick(category)}>
@@ -110,12 +143,69 @@ export const SingleTeacher = () => {
                 </button>
                 ))}
             </div>
-            <div className="mt-4">
-
+            <div className="mt-5">
                 {selectedCategory && (
                 <div className=''>
-                    <div className='flex flex-wrap w-[100%] mx-auto'>
-                        {data[selectedCategory].map((item) => (
+                    <div className='flex flex-wrap w-[100%] mx-auto gap-5'>
+                        {selectedCategory === "teacherPlan"? 
+                         data[selectedCategory].map((item, index) => (  
+                            <>
+                                <div className={` ${index === 1 ? 'border border-indigo-600 ring-1 ring-indigo-600':'border border-gray-200'} rounded-2xl p-6 shadow-sm sm:order-last sm:px-8 lg:p-12 mt-5`}>
+                                    <div className="text-center">
+                                        <h2 className="text-lg font-medium text-gray-900">
+                                            {item.title}
+                                            <span className="sr-only">{item.subtitle}</span>
+                                        </h2>
+                                        <p className="mt-2 sm:mt-4">
+                                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">30$</strong>
+                                            <span className="text-sm font-medium text-gray-700">/month</span>
+                                        </p>
+                                    </div>
+                                    <ul className="mt-6 space-y-2">
+                                        <li className="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 text-indigo-700">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                            </svg>
+                                            <span className="text-gray-700">{item.feature1} </span>
+                                        </li>
+                                        <li className="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 text-indigo-700">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                            </svg>
+                                            <span className="text-gray-700"> {item.feature2} </span>
+                                        </li>
+                                        <li className="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 text-indigo-700">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                            </svg>
+                                            <span className="text-gray-700"> {item.feature3} </span>
+                                        </li>
+                                        <li className="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 text-indigo-700">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                            </svg>
+                                            <span className="text-gray-700"> {item.feature4} </span>
+                                        </li>
+                                        <li className="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 text-indigo-700">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                            </svg>
+                                            <span className="text-gray-700"> {item.feature5} </span>
+                                        </li>
+                                        <li className="flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5 text-indigo-700">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                            </svg>
+                                            <span className="text-gray-700"> {item.feature6} </span>
+                                        </li>
+                                    </ul>
+                                    <button className={`${index === 1 ? 'bg-white text-indigo-600 hover:ring-indigo-600':'bg-indigo-600 text-white hover:bg-indigo-700 hover:ring-indigo-700 '} mx-auto focus:outline-none focus:ring active:text-indigo-500 hover:ring-1 px-12 py-3 text-center text-sm font-medium mt-8 block rounded-full border border-indigo-600`}>
+                                        Get Started
+                                    </button>
+                                </div>
+                            </>
+                        ))
+                         : data[selectedCategory].map((item) => (
                             <Link className="card w-[280px] h-[350px] bg-base-100 shadow-xl m-5 mt-5">
                                 <figure className='w-[280px]'><img src={item.img} alt="course img"/></figure>
                                 <div className="card-body h-40">
@@ -133,6 +223,40 @@ export const SingleTeacher = () => {
                 )}
             </div>
         </section>
+        
+        
+
+
+
+
+        {/*
+        <section className='w-[60%] mx-auto flex gap-8'>
+            <div className="card w-96 bg-primary text-primary-content">
+                <div className="card-body">
+                    <h2 className="card-title font-poppins text-2xl font-medium">Professional</h2>
+                    <span className='capitalize'>most popular</span>
+                    <div className='flex items-center gap-3 mt-5'>
+                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
+                    </div>
+                    <div className='flex items-center gap-3 mt-5'>
+                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
+                    </div>
+                    <div className='flex items-center gap-3 mt-5'>
+                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
+                    </div>
+                    <div className='flex items-center gap-3 mt-5'>
+                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
+                    </div>
+                    <div className='flex items-center gap-3 mt-5'>
+                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
+                    </div>
+                    <div className="card-actions justify-center">
+                    <button className="btn mt-5">get started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+                        */}
     </div>
   )
 }
