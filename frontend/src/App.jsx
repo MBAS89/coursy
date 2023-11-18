@@ -6,7 +6,8 @@ import { SingleCourse } from "./pages/SingleCourse"
 import { SingleTeacher } from "./pages/SingleTeacher"
 import { Signup } from "./pages/Signup"
 import { StudentProfile } from "./pages/StudentProfile"
-import { Cart } from "./pages/Cart"
+import { Chatpage } from "./pages/Chatpage"
+
 
 
 
@@ -20,7 +21,7 @@ function App() {
         <Route path="/singleteacher" element={<SingleTeacher/>}></Route>
         <Route path="/signup" element={<Signup/>}></Route>
         <Route path="/studentprofile" element={<StudentProfile/>}></Route>
-        <Route path="/cart" element={<Cart/>}></Route>
+        <Route path="/chatpage" element={<Chatpage/>}></Route>
       </Routes>
     </>
   )

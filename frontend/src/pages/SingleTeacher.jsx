@@ -135,7 +135,7 @@ export const SingleTeacher = () => {
                 </div>
             </div>
         </section>
-        <section className="w-[60%] mx-auto mt-16 mb-20">
+        <section className="w-[60%] h-[600px] mx-auto mt-16 mb-20">
             <div className="flex space-x-4">
                 {categories.map((category) => (
                 <button key={category} className={`${selectedCategory === category? 'bg-blue-500 text-white': 'bg-gray-200 text-gray-600'} px-4 py-2 rounded-md`} onClick={() => handleCategoryClick(category)}>
@@ -146,7 +146,7 @@ export const SingleTeacher = () => {
             <div className="mt-5">
                 {selectedCategory && (
                 <div className=''>
-                    <div className='flex flex-wrap w-[100%] mx-auto gap-5'>
+                    <div className='flex flex-wrap w-[100%] h-[500px] mx-auto gap-5'>
                         {selectedCategory === "teacherPlan"? 
                          data[selectedCategory].map((item, index) => (  
                             <>
@@ -223,40 +223,6 @@ export const SingleTeacher = () => {
                 )}
             </div>
         </section>
-        
-        
-
-
-
-
-        {/*
-        <section className='w-[60%] mx-auto flex gap-8'>
-            <div className="card w-96 bg-primary text-primary-content">
-                <div className="card-body">
-                    <h2 className="card-title font-poppins text-2xl font-medium">Professional</h2>
-                    <span className='capitalize'>most popular</span>
-                    <div className='flex items-center gap-3 mt-5'>
-                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
-                    </div>
-                    <div className='flex items-center gap-3 mt-5'>
-                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
-                    </div>
-                    <div className='flex items-center gap-3 mt-5'>
-                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
-                    </div>
-                    <div className='flex items-center gap-3 mt-5'>
-                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
-                    </div>
-                    <div className='flex items-center gap-3 mt-5'>
-                        <FaRegCircleCheck className='w-6 h-6'/> <span>Access to 24,000+ top courses</span>
-                    </div>
-                    <div className="card-actions justify-center">
-                    <button className="btn mt-5">get started</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-                        */}
     </div>
   )
 }
