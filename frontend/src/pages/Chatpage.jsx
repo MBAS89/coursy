@@ -40,13 +40,13 @@ export const Chatpage = () => {
                     <div className='flex justify-between'>
                         <div className='flex gap-2 items-center'>
                             <img src={Jaklen} className='w-8 h-8 rounded-full mx-auto'/>
-                            <span>michale jordan</span>
+                            <span className='font-bold font-poppins capitalize'>michale jordan</span>
                         </div>
-                        <span>4m</span>
+                        <span className='text-gray-400 font-semibold'>4m</span>
                     </div>
                     <div className='flex justify-between mt-3'>
-                        <p>is simply dummy text of the</p>
-                        <span>3</span>
+                        <p className='text-gray-400 text-sm font-semibold'>is simply dummy text of the</p>
+                        <span className='bg-pink-500 rounded-full p-1'>3</span>
                     </div>
                 </div>
             </div>
