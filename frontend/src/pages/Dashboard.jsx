@@ -7,9 +7,13 @@ import { TbDeviceDesktopAnalytics } from "react-icons/tb";
 import { ImProfile } from "react-icons/im";
 import { IoIosArrowDown, IoIosArrowDropright } from "react-icons/io";
 
+import { RiComputerLine } from "react-icons/ri";
 import { GiTrophyCup } from "react-icons/gi";
 import { GrCertificate } from "react-icons/gr";
 import { PiStudent } from "react-icons/pi";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { GiCalculator } from "react-icons/gi";
+import { AiOutlineShop } from "react-icons/ai";
 export const Dashboard = () => {
     return (
     <div>
@@ -87,19 +91,40 @@ export const Dashboard = () => {
                         </div>
                     </div>
                 </div>
+                <div>
+                    <h3>Leaderboard</h3>
+                </div>
             </section>
             <section className='w-[25%]'>
                 <div className='m-10 flex justify-between'>
                     <span className='font-poppins font-semibold text-lg'>Schedule</span>
                     <span className='text-sm text-blue-400'>View All</span>
                 </div>
-                <div className='flex items-center gap-10'>
-                    <PiStudent />
-                    <div>
-                        <h3>Marketing</h3>
-                        <span>8:00-9:20 | Mrs.Smith</span>
+                <div className='flex flex-col gap-5'>
+                    <div className='flex items-center gap-10 w-80 mx-10 py-5 rounded-2xl pl-5 bg-blue-200'>
+                        <span className="rounded-full text-xl bg-zinc-200 p-2"><AiOutlineShop className=''/></span>
+                        <div>
+                            <h3 className='font-semibold font-poppins'>Marketing</h3>
+                            <span className='text-gray-400 text-xs font-poppins'>8:00-9:20  |  Mrs.Smith</span>
+                        </div>
+                        <MdOutlineKeyboardArrowRight className='text-2xl'/>
                     </div>
-                    <IoIosArrowDropright />
+                    <div className='flex items-center gap-10 w-80 mx-10 py-5 rounded-2xl pl-5 bg-blue-200 '>
+                        <span className="rounded-full text-xl bg-zinc-200 p-2"><GiCalculator className=''/></span>
+                        <div>
+                            <h3 className='font-semibold font-poppins'>Accounting</h3>
+                            <span className='text-gray-400 text-xs font-poppins'>8:00-9:20  |  Mrs.Smith</span>
+                        </div>
+                        <MdOutlineKeyboardArrowRight className='text-2xl'/>
+                    </div>
+                    <div className='flex items-center gap-10 w-80 mx-10 py-5 rounded-2xl pl-5 bg-blue-200 '>
+                        <span className="rounded-full text-xl bg-zinc-200 p-2"><RiComputerLine  className=''/></span>
+                        <div>
+                            <h3 className='font-semibold font-poppins'>Programming</h3>
+                            <span className='text-gray-400 text-xs font-poppins'>8:00-9:20  |  Mrs.Smith</span>
+                        </div>
+                        <MdOutlineKeyboardArrowRight className='text-2xl'/>
+                    </div>
                 </div>
             </section>
         </section>
