@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Jaklen from '../assets/images/jaklen.jpg';
+
 import { IoHomeOutline } from "react-icons/io5";
 import { PiBooks } from "react-icons/pi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { TbDeviceDesktopAnalytics } from "react-icons/tb";
 import { ImProfile } from "react-icons/im";
-import { IoIosArrowDown, IoIosArrowDropright } from "react-icons/io";
-
+import { IoIosArrowDown} from "react-icons/io";
 import { RiComputerLine } from "react-icons/ri";
 import { GiTrophyCup } from "react-icons/gi";
 import { GrCertificate } from "react-icons/gr";
@@ -92,7 +93,52 @@ export const Dashboard = () => {
                     </div>
                 </div>
                 <div>
-                    <h3>Leaderboard</h3>
+                    <h3 className='m-10 text-2xl font-poppins font-medium'>Leaderboard</h3>
+                    <div className="w-[1100px] mx-10">
+                        <table className="table font-poppins bg-blue-200">
+                            <thead>
+                                <tr>
+                                    <th>Ranking</th>
+                                    <th>Member</th>
+                                    <th>Courses</th>
+                                    <th>Hours</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td className='flex items-center gap-3 text-white'><img src={Jaklen} className='w-8 h-8 rounded-full'/>Cy Ganderton</td>
+                                    <td>Quality Control Specialist</td>
+                                    <td>30:21</td>
+                                    <td className='text-white'>300</td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>2</th>
+                                    <td className='flex items-center gap-3 text-white'><img src={Jaklen} className='w-8 h-8 rounded-full'/>Hart Hagerty</td>
+                                    <td>Desktop Support Technician</td>
+                                    <td>10:05</td>
+                                    <td className='text-white'>290</td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>3</th>
+                                    <td className='flex items-center gap-3 text-white'><img src={Jaklen} className='w-8 h-8 rounded-full'/>Brice Swyre</td>
+                                    <td>Tax Accountant</td>
+                                    <td>24:15</td>
+                                    <td className='text-white'>187</td>
+                                </tr>
+                                <tr>
+                                    <th>6</th>
+                                    <td className='flex items-center gap-3 text-white'><img src={Jaklen} className='w-8 h-8 rounded-full'/>carle andrea</td>
+                                    <td>marketing specialest</td>
+                                    <td>17:10</td>
+                                    <td className='text-white'>67</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
             <section className='w-[25%]'>
