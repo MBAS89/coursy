@@ -3,7 +3,7 @@ import Jaklen from '../assets/images/jaklen.jpg';
 import uiux from '../assets/images/uiux.jpg';
 import { Link } from 'react-router-dom';
 import { BsBookmark } from "react-icons/bs";
-import { FaRegCircleCheck } from "react-icons/fa6";
+
 
 export const SingleTeacher = () => {
     const [selectedCategory,setSelectedCategory] = useState('freeCourses')

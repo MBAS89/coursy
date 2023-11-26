@@ -8,6 +8,7 @@ import { Signup } from "./pages/Signup"
 import { StudentProfile } from "./pages/StudentProfile"
 import { Chatpage } from "./pages/Chatpage"
 import { Dashboard } from "./pages/Dashboard"
+import { Newsfeed } from "./pages/Newsfeed"
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/studentprofile" element={<StudentProfile/>}></Route>
         <Route path="/chatpage" element={<Chatpage/>}></Route>
         <Route path="/dashboard" element={<Dashboard/>}></Route>
+        <Route path="/newsfeed" element={<Newsfeed/>}></Route>
       </Routes>
     </>
   )
