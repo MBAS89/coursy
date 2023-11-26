@@ -100,7 +100,7 @@ export const StudentProfile = () => {
                         <div className=' pt-3'>
                             <img src={uiux} alt="course img" className='w-60 h-48 rounded-2xl mb-3 mx-auto'/>
                         </div>
-                        <p className='font-bold text-lg text-left mx-3 mb-3'>Video for Instagram: Tell an Engaging Story in Less Than a Minute</p>
+                        <p className='font-bold text-left mx-3 mb-3'>Video for Instagram: Tell an Engaging Story in Less Than a Minute</p>
                         <div className='flex gap-3 mx-3'>
                             <img src={Jaklen} className='w-12 h-12 rounded-full'/>
                             <div className='flex flex-col'>
@@ -113,7 +113,7 @@ export const StudentProfile = () => {
                         <div className=' pt-3'>
                             <img src={uiux} alt="course img" className='w-60 h-48 rounded-2xl mb-3 mx-auto'/>
                         </div>
-                        <p className='font-bold text-lg text-left mx-3 mb-3'>Video for Instagram: Tell an Engaging Story in Less Than a Minute</p>
+                        <p className='font-bold text-left mx-3 mb-3'>Video for Instagram: Tell an Engaging Story in Less Than a Minute</p>
                         <div className='flex gap-3 mx-3'>
                             <img src={Jaklen} className='w-12 h-12 rounded-full'/>
                             <div className='flex flex-col'>
@@ -126,7 +126,7 @@ export const StudentProfile = () => {
                         <div className=' pt-3'>
                             <img src={uiux} alt="course img" className='w-60 h-48 rounded-2xl mb-3 mx-auto'/>
                         </div>
-                        <p className='font-bold text-lg text-left mx-3 mb-3'>Video for Instagram: Tell an Engaging Story in Less Than a Minute</p>
+                        <p className='font-bold text-left mx-3 mb-3'>Video for Instagram: Tell an Engaging Story in Less Than a Minute</p>
                         <div className='flex gap-3 mx-3'>
                             <img src={Jaklen} className='w-12 h-12 rounded-full'/>
                             <div className='flex flex-col'>
