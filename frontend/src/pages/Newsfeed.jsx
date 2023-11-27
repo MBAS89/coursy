@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom'
 import Jaklen from '../assets/images/jaklen.jpg';
 import ad from '../assets/images/ad.jpg';
 
-
-
 import { BsBookmark } from "react-icons/bs";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { TiDocumentText } from "react-icons/ti";
 import { ImProfile } from "react-icons/im";
 import { CiImageOn } from "react-icons/ci";
+import { BsThreeDots } from "react-icons/bs";
+import { AiOutlineClose } from "react-icons/ai";
+import { IoEarthSharp } from "react-icons/io5";
+import { AiOutlineLike } from "react-icons/ai";
+import { FaRegCommentDots } from "react-icons/fa";
+import { PiShareFat } from "react-icons/pi";
 export const Newsfeed = () => {
     return (
     <div>
@@ -37,10 +41,34 @@ export const Newsfeed = () => {
                 </div>
             </section>
             <section className='w-[1300px] bg-teal-300'>
-                <div className='w-[900px] h-20 mx-40 mt-5 flex items-center gap-3 bg-orange-300'>
-                    <img src={Jaklen} alt="course img" className='h-10 w-10 ml-3 rounded-full'/>
-                    <input type="text" placeholder="Type here" className="input w-[80%] bg-rose-400" />
-                    <CiImageOn className='text-5xl text-gray-400 hover:text-indigo-500 cursor-pointer'/>
+                <div className='w-[900px] h-32 mx-40 mt-5 pb-6 flex items-start gap-3 bg-white'>
+                    <img src={Jaklen} alt="course img" className='h-10 w-10 ml-3 mt-7 rounded-full'/>
+                    <input type="text" placeholder="Type here" className="input w-[80%] mt-7 bg-rose-400" />
+                    <CiImageOn className='text-5xl text-gray-400 hover:text-indigo-500 cursor-pointer mt-7'/>
+                </div>
+                <div className='mx-40'>
+                    <div className='flex justify-between bg-purple-300'>
+                        <div className='flex items-center bg-yellow-100'>
+                            <div className='bg-blue-400'>
+                                <img src={Jaklen} alt="course img" className='h-14 w-14 ml-3 mt-7 rounded-full'/>
+                            </div>
+                            <div>
+                                <span>patric mark</span>
+                                <div className='flex items-center gap-1'>
+                                    <span>5h</span>
+                                    <IoEarthSharp />
+                                </div>
+                            </div>
+                        </div>
+                        <div className='flex'>
+                            <BsThreeDots className='text-4xl'/>
+                            <AiOutlineClose />
+                        </div>
+                    </div>
+                    <p></p>
+                    <AiOutlineLike />
+                    <FaRegCommentDots />
+                    <PiShareFat />
                 </div>
             </section>
             <section className='w-96'>
