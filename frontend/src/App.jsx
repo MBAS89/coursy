@@ -9,6 +9,7 @@ import { StudentProfile } from "./pages/StudentProfile"
 import { Chatpage } from "./pages/Chatpage"
 import { Dashboard } from "./pages/Dashboard"
 import { Newsfeed } from "./pages/Newsfeed"
+import { Livemeeting } from "./pages/Livemeeting"
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/chatpage" element={<Chatpage/>}></Route>
         <Route path="/dashboard" element={<Dashboard/>}></Route>
         <Route path="/newsfeed" element={<Newsfeed/>}></Route>
+        <Route path="/live" element={<Livemeeting/>}></Route>
       </Routes>
     </>
   )
