@@ -10,6 +10,7 @@ import { Chatpage } from "./pages/Chatpage"
 import { Dashboard } from "./pages/Dashboard"
 import { Newsfeed } from "./pages/Newsfeed"
 import { Livemeeting } from "./pages/Livemeeting"
+import { Explorepage } from "./pages/Explorepage"
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>}></Route>
         <Route path="/newsfeed" element={<Newsfeed/>}></Route>
         <Route path="/live" element={<Livemeeting/>}></Route>
+        <Route path="/explorepage" element={<Explorepage/>}></Route>
       </Routes>
     </>
   )
