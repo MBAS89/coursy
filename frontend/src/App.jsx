@@ -11,6 +11,7 @@ import { Dashboard } from "./pages/Dashboard"
 import { Newsfeed } from "./pages/Newsfeed"
 import { Livemeeting } from "./pages/Livemeeting"
 import { Explorepage } from "./pages/Explorepage"
+import { Coursesupload } from "./pages/Coursesupload"
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/newsfeed" element={<Newsfeed/>}></Route>
         <Route path="/live" element={<Livemeeting/>}></Route>
         <Route path="/explorepage" element={<Explorepage/>}></Route>
+        <Route path="/upload" element={<Coursesupload/>}></Route>
       </Routes>
     </>
   )
