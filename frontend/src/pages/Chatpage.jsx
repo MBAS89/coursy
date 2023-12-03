@@ -164,10 +164,10 @@ export const Chatpage = () => {
                             Delivered
                         </div>
                     </div>
-                    <div class="flex items-center mt-5">
-                        <div class="flex-grow border-t-2 border-slate-300"></div>
-                        <div class="mx-10 text-slate-400">Today</div>
-                        <div class="flex-grow border-t-2 border-slate-300"></div>
+                    <div className="flex items-center mt-5">
+                        <div className="flex-grow border-t-2 border-slate-300"></div>
+                        <div className="mx-10 text-slate-400">Today</div>
+                        <div className="flex-grow border-t-2 border-slate-300"></div>
                     </div>
                 </div>
                 <div className='absolute bottom-4 flex justify-between w-[95%] mx-4 py-2 rounded-xl bg-white'>

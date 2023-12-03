@@ -16,6 +16,7 @@ import { MdPerson } from "react-icons/md";
 import { ImPhoneHangUp } from "react-icons/im";
 import { FaMicrophone } from "react-icons/fa";
 import { BsFillCameraFill } from "react-icons/bs";
+import { LuSend } from "react-icons/lu";
 
 import { IoCameraReverseSharp } from "react-icons/io5";
 export const Livemeeting = () => {
@@ -124,22 +125,77 @@ export const Livemeeting = () => {
                         <BsFillCameraFill className='absolute bottom-[380px] left-[600px] h-14 w-14 p-3 text-4xl text-white bg-zinc-700 opacity-75 rounded-full'/>
                         <IoCameraReverseSharp className='absolute bottom-[380px] left-[500px] h-14 w-14 p-3 text-4xl text-white bg-zinc-700 opacity-75 rounded-full'/>
                     </div>
-                    <div className='w-[30%] bg-orange-300'>
-                        <div className='mt-5 h-[840px] rounded-xl border-2 bg-pink-300 border-gray-300'>
-                            <div className='flex justify-between border-b border-zinc-100'>
-                                <h2 className=''>Live Chat</h2>
-                                <span className='flex items-center gap-1 px-2 rounded-md border border-zinc-100'><span className='font-semibold'>Group</span><MdKeyboardArrowDown /></span>
+                    <div className='w-[30%]'>
+                        <div className='mt-5 h-[840px] rounded-2xl border-2 mx-2 border-zinc-100'>
+                            <div className='flex justify-between items-center py-4 px-3 border-b border-zinc-100'>
+                                <h2 className='font-semibold text-xl font-poppins'>Live Chat</h2>
+                                <span className='flex items-center gap-1 px-2 rounded border border-zinc-100'><span className='font-semibold'>Group</span><MdKeyboardArrowDown /></span>
+                            </div>
+                            <div className='px-6 py-3'>
+                                <div className="chat chat-start">
+                                    <div className="chat-image avatar">
+                                        <div className="w-10 rounded-full">
+                                        <img src={Jaklen} className='w-8 h-8 rounded-full mx-auto'/>
+                                        </div>
+                                    </div>
+                                    <div className="chat-header">
+                                        <span className='font-semibold mr-2'>Michale</span>
+                                        <time className="text-xs opacity-50">5 minutes ago</time>
+                                    </div>
+                                    <div className="chat-bubble">Hi. Whats up ?</div>
+                                    <div className="chat-footer opacity-50">
+                                        Delivered
+                                    </div>
+                                </div>
+                                <div className="chat chat-end">
+                                    <div className="chat-image avatar">
+                                        <div className="w-10 rounded-full">
+                                        <img src={Jaklen} className='w-8 h-8 rounded-full mx-auto'/>
+                                        </div>
+                                    </div>
+                                    <div className="chat-header">
+                                        <span className='font-semibold mr-2'>Ana</span>
+                                        <time className="text-xs opacity-50">2 minutes ago</time>
+                                    </div>
+                                    <div className="chat-bubble">Well, and you!</div>
+                                    <div className="chat-footer opacity-50">
+                                        Seen at 12:46
+                                    </div>
+                                </div>
+                                <div className="chat chat-start">
+                                    <div className="chat-image avatar">
+                                        <div className="w-10 rounded-full">
+                                        <img src={Jaklen} className='w-8 h-8 rounded-full mx-auto'/>
+                                        </div>
+                                    </div>
+                                    <div className="chat-header">
+                                        <span className='font-semibold mr-2'>Michale</span>
+                                        <time className="text-xs opacity-50">1 minute ago</time>
+                                    </div>
+                                    <div className="chat-bubble">...</div>
+                                    <div className="chat-footer opacity-50">
+                                        Delivered
+                                    </div>
+                                </div>
+                                <div className="flex items-center mt-5">
+                                    <div className="flex-grow border-t-2 border-zinc-100"></div>
+                                    <div className="mx-10 text-slate-400">Today</div>
+                                    <div className="flex-grow border-t-2 border-zinc-100"></div>
+                                </div>
+                            </div>
+                            <div className='absolute bottom-4 flex justify-between w-[27%] mx-2 mb-5 py-2 rounded-xl bg-zinc-100'>
+                                <input type="text" placeholder="Type your message" className="input input-sm h-9 w-full ml-2 mr-2"/>
+                                <div className='flex items-center gap-3'> 
+                                    <button>
+                                        <LuSend className='text-white p-2 w-9 h-9 text-3xl mr-2 rounded-xl bg-indigo-500'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-        
-            
-        
     </div>
   )
 }
